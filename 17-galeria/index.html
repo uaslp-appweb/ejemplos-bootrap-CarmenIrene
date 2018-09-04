@@ -21,11 +21,11 @@
         var galeria = document.getElementById('galeria');
         var imagen;
         for (imagen = 1; imagen < 11; imagen++){
-        galeria.innerHTML += `<div class="card">
-                <a href="#modal/${imagen}" data-toggle="modal">
+        galeria.innerHTML += `  <div class="card">
+                <a href="#modal${imagen}" data-toggle="modal">
                 <img src="img/${imagen}.jpg" alt="" class="card-img-top">
                 </a>
-                <div class="modal fade" id="modal/${imagen}">
+                <div class="modal fade" id="modal${imagen}">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content">
                             <img class="img-fluid" src="img/${imagen}.jpg" alt="">
